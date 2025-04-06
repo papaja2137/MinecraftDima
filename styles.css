@@ -1,0 +1,474 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Minecraft', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Header Styles */
+header {
+    background-color: #2d2d2d;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo h1 {
+    color: #55ff55;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #55ff55;
+    color: #000000;
+}
+
+nav a.active {
+    background-color: #55ff55;
+    color: #000000;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.welcome {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.welcome h2 {
+    color: #55ff55;
+    margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2d2d2d;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+    animation: fadeIn 1s ease-in;
+}
+
+/* World Page Styles */
+.world-description {
+    padding: 2rem;
+}
+
+.content-block {
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.content-block h3 {
+    color: #55ff55;
+    margin-bottom: 1rem;
+}
+
+.content-block ul {
+    list-style-position: inside;
+    margin: 1rem 0;
+}
+
+.content-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-modes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.mode {
+    background-color: #3d3d3d;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.mode:hover {
+    transform: translateY(-5px);
+}
+
+.mode h4 {
+    color: #55ff55;
+    margin-bottom: 0.5rem;
+}
+
+.dimensions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.dimension {
+    background-color: #3d3d3d;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.dimension-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Characters Page Styles */
+.characters {
+    padding: 2rem;
+}
+
+.character-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.character-card {
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+}
+
+.character-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.character-info {
+    padding: 1.5rem;
+}
+
+.character-info h3 {
+    color: #55ff55;
+    margin-bottom: 0.5rem;
+}
+
+.character-info p {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Multimedia Page Styles */
+.multimedia {
+    padding: 2rem;
+}
+
+.video-section {
+    margin-bottom: 3rem;
+}
+
+.video-section h3 {
+    color: #55ff55;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.gallery-section h3 {
+    color: #55ff55;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item p {
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Curiosities Page Styles */
+.curiosities {
+    padding: 2rem;
+}
+
+.facts-section h3,
+.opinion-section h3 {
+    color: #55ff55;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.fact-card {
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+}
+
+.fact-card h4 {
+    color: #55ff55;
+    margin-bottom: 1rem;
+}
+
+.opinion-content {
+    display: grid;
+    gap: 2rem;
+}
+
+.opinion-block {
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.opinion-block h4 {
+    color: #55ff55;
+    margin-bottom: 1rem;
+}
+
+.pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.pros, .cons {
+    background-color: #3d3d3d;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.pros h5, .cons h5 {
+    color: #55ff55;
+    margin-bottom: 0.5rem;
+}
+
+.pros ul, .cons ul {
+    list-style-position: inside;
+    color: #ffffff;
+}
+
+/* Quiz Styles */
+.quiz-section {
+    background-color: #2d2d2d;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.quiz-section h3 {
+    color: #55ff55;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.quiz-question {
+    background-color: #3d3d3d;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.quiz-question h4 {
+    color: #55ff55;
+    margin-bottom: 1rem;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.quiz-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.quiz-options label:hover {
+    background-color: #4d4d4d;
+}
+
+.quiz-submit {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #55ff55;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Minecraft', Arial, sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.quiz-submit:hover {
+    transform: scale(1.05);
+}
+
+.quiz-result {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.result-message {
+    background-color: #3d3d3d;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.result-message h4 {
+    color: #55ff55;
+    margin-bottom: 1rem;
+} 
